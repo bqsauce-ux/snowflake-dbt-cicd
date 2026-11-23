@@ -90,7 +90,7 @@ jobs:
 
     env:
       SNOWFLAKE_ACCOUNT: ${{ secrets.SNOWFLAKE_ACCOUNT }}
-      SNOWFLAKE_USER: ${{ secrets.SNOWFLAKE_PROD_USER }}
+      SNOWFLAKE_PROD_USER: ${{ secrets.SNOWFLAKE_PROD_USER }}
       DBT_ENV_SECRET_PASSWORD: ${{ secrets.SNOWFLAKE_PROD_PASSWORD }}
       SNOWFLAKE_ROLE: ${{ secrets.SNOWFLAKE_PROD_ROLE }}
 
