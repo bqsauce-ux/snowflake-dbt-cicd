@@ -48,7 +48,7 @@ jobs:
         run: |
           mkdir -p ~/.dbt
           cat > ~/.dbt/profiles.yml << EOF
-          jaffle_shop:
+          jaffle_shop_1:
             target: dev
             outputs:
               dev:
