@@ -14,3 +14,4 @@ profiles.yml
 
 # OS
 .DS_Store
+dbt_internal_packages/
