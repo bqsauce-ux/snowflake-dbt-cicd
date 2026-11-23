@@ -120,9 +120,9 @@ jobs:
               prod:
                 type: snowflake
                 account: "{{ env_var('SNOWFLAKE_ACCOUNT') }}"
-                user: "{{ env_var('SNOWFLAKE_USER') }}"
-                password: "{{ env_var('DBT_ENV_SECRET_PASSWORD') }}"
-                role: "{{ env_var('SNOWFLAKE_ROLE') }}"
+                user: "{{ env_var('SNOWFLAKE_PROD_USER') }}"
+                password: "{{ env_var('SNOWFLAKE_PROD_PASSWORD') }}"
+                role: "{{ env_var('SNOWFLAKE_PROD_ROLE') }}"
                 database: PROD_DB
                 warehouse: PROD_WH
                 schema: ANALYTICS
