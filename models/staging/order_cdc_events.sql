@@ -1,0 +1,5 @@
+SELECT
+    CUSTOMER_ID,
+    MAX(CAPTURED_AT) AS LAST_CHANGE_CAPTURED
+FROM {{ source('raw', 'orders_cdc_events') }}
+GROUP BY CUSTOMER_ID
